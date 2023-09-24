@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const NavComponent = () => {
   return (
-    <div className="bg-[#262d3e] h-20 px-10 w-full flex flex-col sm:flex-row justify-between items-center">
+    <nav className="bg-[#262d3e] h-20 px-20 w-full flex flex-col sm:flex-row justify-between items-center">
       <div>
         <Image
           alt="asdf"
@@ -15,7 +15,7 @@ const NavComponent = () => {
           height={10}
         />
       </div>
-      <div className=" hidden sm:flex sm:flex-row gap-10 items-center">
+      <div className="hidden sm:hidden md:hidden lg:flex-row xl:inline-flex gap-10 items-center">
         <MenuItem
           icon="icon-park-outline:down"
           text="Features"
@@ -38,7 +38,7 @@ const NavComponent = () => {
         />
         <button className="bg-[#167efb] rounded-3xl px-4 py-2 text-sm font-medium text-white">Get started free</button>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,1 +1,11 @@
 export { default as NavComponent } from "./common/nav";
+export { default as HeroSection } from "./home/heroSection";
+export { default as Description } from "./common/description";
+export { default as TitleComponent } from "./common/title";
+export { default as MultiplePlatformSection } from "./home/multiplePlatformSection";
+export { default as SetGoal } from "./home/goalAndTimeLine";
+export { default as CommunicationSection } from "./home/communicationSection";
+export { default as Meetask } from "./home/meetTaskSection";
+export { default as ManageSection } from "./home/manageSection";
+export { default as ManagementSection } from "./home/managementSection";
+export { default as FooterSection } from "./common/footerSection";

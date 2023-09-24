@@ -1,10 +1,15 @@
-import Image from "next/image";
-import { NavComponent } from "../components";
+import { NavComponent, HeroSection, MultiplePlatformSection, SetGoal, CommunicationSection, Meetask, ManageSection, ManagementSection } from "@/components";
 
 export default function Home() {
   return (
     <main className=" ">
-      <NavComponent />
+      <HeroSection />
+      <MultiplePlatformSection />
+      <SetGoal />
+      <CommunicationSection />
+      <Meetask />
+      <ManageSection />
+      <ManagementSection />
     </main>
   );
 }
