@@ -6,7 +6,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse lg:flex-row bg-[#262d3e]   xs:px-3 sm:px-4 lg:px-20 items-center justify-between">
+    <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse lg:flex-row bg-[#262d3e]  px-4 xs:px-3 sm:px-4 lg:px-20 items-center justify-between">
       <div className="flex flex-col gap-10 w-[100%] xs:w-[95%] sm:w-[90%] md:w-[90%]">
         <h1 className="text-white font-extrabold xs:text-sm sm:text-base md:text-5xl  leading-snug">
           Meetask brings all your
@@ -15,7 +15,7 @@ const HeroSection = () => {
         <Description text="Simple, flexible and powerful. All it takes is boards, lists, and cards to get a clear view of who is doing what, who is meeting with, setting targets and what needs to be done." />
         <div>
           <Description text="Download Apps:" />
-          <div className="flex flex-row gap-4 mt-4">
+          <div className="flex  flex-col sm:flex-col md:flex-row xl:flex-row gap-4 mt-4">
             <button className="border-[1px] border-[white] gap-3 px-3 py-2 rounded-xl flex flex-row items-center">
               <Icon
                 icon="mdi:google-play"

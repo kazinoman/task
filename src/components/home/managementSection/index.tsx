@@ -13,19 +13,21 @@ const ManagementSection = () => {
         {data.map((data) => {
           return (
             <div className=" flex flex-col items-start gap-10 border-[1px] rounded-xl p-10">
-              <div className="flex flex-row gap-4 items-center">
-                <div className="p-2 rounded-full bg-blue-400 ">
-                  <Icon
-                    icon={data.icon}
-                    className="h-5 w-5 text-white  rounded-full"
-                  />
+              <div className="flex flex-row gap-5 sm:flex-row md:flex-row xl:flex-col justify-between sm:justify-between md:justify-between w-full">
+                <div className="flex flex-row gap-4 items-center">
+                  <div className="p-2 rounded-full bg-blue-400 ">
+                    <Icon
+                      icon={data.icon}
+                      className="h-5 w-5 text-white  rounded-full"
+                    />
+                  </div>
+                  <h1 className="font-bold text-lg">{data.status} </h1>
                 </div>
-                <h1 className="font-bold text-lg">{data.status} </h1>
+                <TitleComponent
+                  text={data.views}
+                  classname="font-extrabold text-3xl"
+                />
               </div>
-              <TitleComponent
-                text={data.views}
-                classname="font-extrabold text-3xl"
-              />
               <Description text={data.description} />
             </div>
           );
